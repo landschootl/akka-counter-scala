@@ -1,6 +1,6 @@
 # akka-counter-scala
 
-University of Lille, M2MIAGE, CARA project made by Laurent Thiebault & Ludovic Landschoot.
+University of Lille, M2MIAGE, CARA project made by [Laurent Thiebault](https://github.com/lauthieb) & [Ludovic Landschoot](https://github.com/Landschoot).
 
 ## Objective
 
