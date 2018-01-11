@@ -14,7 +14,7 @@ class Master extends Actor with ActorLogging {
   var numberOfResponses = 0
 
   var router = {
-    val routees = Vector.fill(2) {
+    val routees = Vector.fill(5) {
       val r = context.actorOf(Worker.props(OCCURENCE_TO_FIND, self))
       context watch r
       ActorRefRoutee(r)
