@@ -13,3 +13,8 @@ Count occurences (words/letters) in a large text file.
   - Use a router actor
   - Send chunks to a worker actor, process them and send the result back
   - Display the result
+  
+  
+## Development
+
+To launch the project, execute ```sbt run```
