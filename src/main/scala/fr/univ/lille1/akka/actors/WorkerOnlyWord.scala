@@ -9,7 +9,7 @@ object WorkerAllWord {
 }
 
 class WorkerAllWord(masterActor: ActorRef) extends Actor with ActorLogging {
-  println("Worker all start")
+  println("Worker all start.")
 
   def receive = {
     case line: String => {
