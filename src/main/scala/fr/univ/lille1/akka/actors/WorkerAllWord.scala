@@ -14,10 +14,10 @@ class WorkerAllWord(masterActor: ActorRef) extends Actor with ActorLogging {
   def receive = {
     case line: String => {
       val numbers: mutable.Map[String, Int] = mutable.Map.empty[String, Int].withDefaultValue(0)
-      for (rawWord <- line.split("[ ,!.]+")) {
+      line.split("[ ,!.]+").foreach(rawWord => {
         val word = rawWord.toLowerCase
         numbers(word) += 1
-      }
+      })
       masterActor ! numbers
     }
   }
